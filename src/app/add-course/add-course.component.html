@@ -2,29 +2,29 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row">
+            <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">coursetitle</label>
-                    <input type="text" class="form-control">
+                    <input name="coursetitle"[(ngModel)]="coursetitle" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">description</label>
-                    <input type="text" class="form-control">
+                    <textarea name="description"[(ngModel)]="description" name="" id="" cols="30" rows="10" class="label form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">venue</label>
-                    <input type="text" class="form-control">
+                    <input name="venue"[(ngModel)]="venue" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">duration</label>
-                    <input type="text" class="form-control">
+                    <input name="duration"[(ngModel)]="duration" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label">date</label>
-                    <input type="text" class="form-control">
+                    <input name="date"[(ngModel)]="date" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">submit</button>
+                    <button (click)="readValues()" class="btn btn-success">submit</button>
                 </div>
             </div>
         </div>
